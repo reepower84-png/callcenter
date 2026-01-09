@@ -76,7 +76,7 @@ export default function AdminPage() {
     }
   }
 
-  const updateStatus = async (id: string, status: Contact['status']) => {
+  const updateStatus = async (id: number, status: Contact['status']) => {
     const storedPassword = localStorage.getItem('adminPassword')
     try {
       const response = await fetch('/api/admin/contacts', {
@@ -98,7 +98,7 @@ export default function AdminPage() {
     }
   }
 
-  const deleteContactItem = async (id: string) => {
+  const deleteContactItem = async (id: number) => {
     if (!confirm('정말 삭제하시겠습니까?')) return
 
     const storedPassword = localStorage.getItem('adminPassword')
