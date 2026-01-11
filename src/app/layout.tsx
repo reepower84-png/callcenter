@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import KakaoFloatingButton from '@/components/KakaoFloatingButton'
 
 export const metadata: Metadata = {
   title: '콜통합센터 | 인바운드·아웃바운드 위탁 전문 콜센터',
@@ -31,7 +32,10 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
         />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        <KakaoFloatingButton />
+      </body>
     </html>
   )
 }
