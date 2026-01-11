@@ -1,6 +1,7 @@
 'use client'
 
-import { Phone, MapPin, Building2 } from 'lucide-react'
+import { MapPin, Building2 } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -11,9 +12,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Phone className="w-6 h-6 text-primary-400" />
-              <span className="font-bold text-xl">콜통합센터</span>
+            <div className="mb-4">
+              <Image
+                src="/ChatGPT_Image_2026년_1월_11일_오후_09_05_04_가로-removebg-preview.png"
+                alt="콜통합센터"
+                width={150}
+                height={40}
+                className="h-10 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               전화 업무를 맡기는 순간, 사업이 가벼워집니다.

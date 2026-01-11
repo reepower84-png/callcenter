@@ -1,7 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Menu, X, Phone, FileText } from 'lucide-react'
+import { Menu, X, FileText } from 'lucide-react'
+import Image from 'next/image'
 
 const PROPOSAL_URL = 'https://drive.google.com/file/d/1FGpJjks9asLnWIAS6wd7be0ARZDssLNM/view?usp=drive_link'
 
@@ -56,12 +57,15 @@ export default function Navbar() {
           {/* Logo */}
           <button
             onClick={() => scrollToSection('#hero')}
-            className="flex items-center gap-2 cursor-pointer"
+            className="flex items-center cursor-pointer"
           >
-            <Phone className={`w-6 h-6 ${isScrolled ? 'text-primary-600' : 'text-white'}`} />
-            <span className={`font-bold text-xl ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
-              콜통합센터
-            </span>
+            <Image
+              src="/ChatGPT_Image_2026년_1월_11일_오후_09_05_04_가로-removebg-preview.png"
+              alt="콜통합센터"
+              width={150}
+              height={40}
+              className={`h-10 w-auto ${isScrolled ? '' : 'brightness-0 invert'}`}
+            />
           </button>
 
           {/* Desktop Navigation */}
