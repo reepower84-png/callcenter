@@ -12,7 +12,7 @@ export default function KakaoFloatingButton() {
       aria-label="카카오톡 상담하기"
     >
       <Image
-        src="/카톡_원형_로고.png"
+        src="/kakao-chat.png"
         alt="카카오톡 상담"
         width={56}
         height={56}
