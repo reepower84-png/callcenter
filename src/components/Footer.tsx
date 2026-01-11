@@ -9,33 +9,35 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div>
-          {/* Company Info */}
-          <div className="mb-4">
-            <Image
-              src="/logo.png"
-              alt="콜통합센터"
-              width={375}
-              height={100}
-              className="h-[100px] w-auto brightness-0 invert"
-            />
+        <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-8">
+          {/* Left: Logo & Description */}
+          <div>
+            <div className="mb-4">
+              <Image
+                src="/logo.png"
+                alt="콜통합센터"
+                width={375}
+                height={100}
+                className="h-[100px] w-auto brightness-0 invert"
+              />
+            </div>
+            <p className="text-gray-400 text-sm leading-relaxed">
+              전화 업무를 맡기는 순간, 사업이 가벼워집니다.
+              <br />
+              인바운드·아웃바운드 위탁 전문 콜센터
+            </p>
           </div>
-          <p className="text-gray-400 text-sm leading-relaxed mb-4">
-            전화 업무를 맡기는 순간, 사업이 가벼워집니다.
-            <br />
-            인바운드·아웃바운드 위탁 전문 콜센터
-          </p>
 
-          {/* Business Info */}
-          <div className="space-y-2 text-sm text-gray-400">
-            <div className="flex items-start gap-2">
+          {/* Right: Business Info (bottom-aligned) */}
+          <div className="space-y-2 text-sm text-gray-400 md:text-right">
+            <div className="flex items-start gap-2 md:justify-end">
               <Building2 className="w-4 h-4 mt-0.5 text-gray-500 flex-shrink-0" />
               <div>
                 <p>상호: 제이코리아 | 대표: 이주영</p>
                 <p>사업자등록번호: 278-30-01540</p>
               </div>
             </div>
-            <div className="flex items-start gap-2">
+            <div className="flex items-start gap-2 md:justify-end">
               <MapPin className="w-4 h-4 mt-0.5 text-gray-500 flex-shrink-0" />
               <p>인천광역시 계양구 오조산로57번길 15, 7층 7106호</p>
             </div>
