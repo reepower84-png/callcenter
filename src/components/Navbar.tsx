@@ -60,7 +60,7 @@ export default function Navbar() {
             className="flex items-center cursor-pointer"
           >
             <Image
-              src="/ChatGPT_Image_2026년_1월_11일_오후_09_05_04_가로-removebg-preview.png"
+              src="/logo.png"
               alt="콜통합센터"
               width={150}
               height={40}
