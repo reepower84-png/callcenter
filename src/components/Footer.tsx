@@ -16,9 +16,9 @@ export default function Footer() {
               <Image
                 src="/logo.png"
                 alt="콜통합센터"
-                width={150}
-                height={40}
-                className="h-10 w-auto brightness-0 invert"
+                width={375}
+                height={100}
+                className="h-[100px] w-auto brightness-0 invert"
               />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
