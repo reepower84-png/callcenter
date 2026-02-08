@@ -33,13 +33,13 @@ export default function Footer() {
             <div className="flex items-start gap-2 md:justify-end">
               <Building2 className="w-4 h-4 mt-0.5 text-gray-500 flex-shrink-0" />
               <div>
-                <p>상호: 제이코리아 | 대표: 이주영</p>
-                <p>사업자등록번호: 278-30-01540</p>
+                <p>상호: 효시스템 | 대표: 이주영</p>
+                <p>사업자등록번호: 556-56-00868</p>
               </div>
             </div>
             <div className="flex items-start gap-2 md:justify-end">
               <MapPin className="w-4 h-4 mt-0.5 text-gray-500 flex-shrink-0" />
-              <p>인천광역시 계양구 오조산로57번길 15, 7층 7106호</p>
+              <p>인천광역시 계양구 계산새로87번길 5, 6층 602호</p>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
             <p>&copy; {currentYear} 콜통합센터. All rights reserved.</p>
-            <p>Powered by 제이코리아</p>
+            <p>Powered by 효시스템</p>
           </div>
         </div>
       </div>
