@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { Send, CheckCircle, Loader2, Phone, User, MessageSquare } from 'lucide-react'
+import { Send, CheckCircle, Loader2, Phone, User, MessageSquare, MessageCircle } from 'lucide-react'
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -218,6 +218,17 @@ export default function ContactForm() {
                     </>
                   )}
                 </button>
+
+                {/* KakaoTalk */}
+                <a
+                  href="http://pf.kakao.com/_jABxon/chat"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-[#FEE500] text-[#3C1E1E] py-4 rounded-xl font-semibold hover:bg-[#FFDE00] transition-all flex items-center justify-center gap-2"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                  카카오톡으로 상담하기
+                </a>
               </div>
 
               <p className="text-xs text-gray-500 mt-4 text-center">
